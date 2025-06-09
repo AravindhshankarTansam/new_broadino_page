@@ -108,9 +108,10 @@
   "options": {
     "baseHref": "/new_broadino/",
     "outputPath": "dist/broadino_web",
-    "targetDir": "dist/broadino_web/browser"
+    "targetDir": "browser"
   }
 }
+
 
       }
     }
