@@ -53,7 +53,8 @@
                   "maximumError": "400kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/new_broadino/"
             },
             "development": {
               "buildOptimizer": false,
@@ -103,14 +104,13 @@
           }
         },
         "deploy": {
-  "builder": "angular-cli-ghpages:deploy",
-  "options": {
-    "baseHref": "/new_broadino/",
-    "deployUrl": "/new_broadino/",
-    "targetDir": "dist/broadino_web/browser"
-  }
-}
-
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/new_broadino/",
+            "deployUrl": "/new_broadino/",
+            "outputPath": "dist/broadino_web/browser"
+          }
+        }
       }
     }
   },
