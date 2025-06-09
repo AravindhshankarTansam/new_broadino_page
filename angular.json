@@ -53,8 +53,8 @@
                   "maximumError": "400kb"
                 }
               ],
-              "outputHashing": "all",
-              "baseHref": "/new_broadino/"
+              "outputHashing": "all"
+              
             },
             "development": {
               "buildOptimizer": false,
@@ -107,7 +107,8 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "baseHref": "/new_broadino/",
-            "outputPath": "dist/broadino_web/browser"
+            "outputPath": "dist/broadino_web/browser",
+            "targetDir": "dist/broadino_web/browser"
           }
         }
       }
