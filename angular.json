@@ -103,14 +103,15 @@
             "scripts": []
           }
         },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "baseHref": "/new_broadino/",
-            "outputPath": "dist/broadino_web/browser",
-            "targetDir": "dist/broadino_web/browser"
-          }
-        }
+"deploy": {
+  "builder": "angular-cli-ghpages:deploy",
+  "options": {
+    "baseHref": "/new_broadino/",
+    "outputPath": "dist/broadino_web",
+    "targetDir": "dist/broadino_web/browser"
+  }
+}
+
       }
     }
   },
