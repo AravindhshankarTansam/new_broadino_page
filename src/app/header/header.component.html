@@ -1,0 +1,261 @@
+<div class="header" id="header">
+  <div class="topline">
+    <!-- Social media icons start -->
+    <div class="socialmedia">
+      <a href="https://facebook.com" target="_blank" class="facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Scrolling Notification -->
+  <div class="scrollingnotif">
+    <div class="notification-frame">
+      <!-- <span class="default-notification">New Notification</span> -->
+      <!-- Default notification -->
+      <div class="scrolling-content">
+        <a class="notification-link" href="https://tansam.org">
+          <!-- <p class="notification-text">
+            <i class="fa-solid fa-bell fa-shake"></i> Broadino is offering a new
+            internship !!!
+          </p> -->
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="topright-container">
+    <!-- <div class="topright">
+      <a [routerLink]="['career']">Career</a>
+    </div> -->
+    <div class="topright">
+      <!-- <a [routerLink]="['GCC']">GCC</a> -->
+    </div>
+    <div class="topright">
+      <!-- <a [routerLink]="['internship_Reg']">Internship</a> -->
+    </div>
+  </div>
+
+  <div class="rightside">
+    <!-- <a href="/sitemap"><i class="fa-solid fa-sitemap"></i> SITE Map </a> -->
+  </div>
+</div>
+
+<!-- Logo section -->
+<section class="logosection" id="logosection">
+  <div class="imagesection">
+    <img src="assets/broimg.png" alt="Broadino_Logo" />
+    <!-- <a href="https://tansam.org" target="_blank">
+   
+    </a> -->
+  </div>
+
+  <div class="title">
+    <!-- <a href="https://www.tn.gov.in/" target="_blank">
+      <img src="assets/headerimage/tnlogo.png" alt="TN_Logo" />
+    </a> -->
+    <h3 class="title-top">Broadino</h3>
+    <br />
+    <h6 class="title-top">
+      Empowers the future through intelligent innovation
+    </h6>
+    <!-- <h3 class="title-bottom">
+      <span class="shortform">Center of Excellence</span>
+      <span class="secword">powered by</span>
+      <span class="company"><img src="assets/headerimage/siemens.png" /></span>
+    </h3> -->
+  </div>
+
+  <div class="imagesection">
+    <!-- <a href="https://tidco.com" target="_blank">
+      <img src="assets/headerimage/tidcologo.png" alt="TIDCO_Logo" />
+    </a> -->
+  </div>
+</section>
+
+<!-- Navigation start here -->
+<nav class="navbar" [ngClass]="{ sticky: isScrolled }">
+  <!-- Hamburger Menu (Toggles Open/Close) -->
+  <div
+    class="hamburger"
+    (click)="toggleMenu()"
+    [ngClass]="{ 'close-icon': isMenuOpen }"
+  >
+    {{ isMenuOpen ? "✖" : "☰" }}
+  </div>
+
+  <ul class="nav-list" [ngClass]="{ active: isMenuOpen }">
+    <li class="active"><a href="#">Home</a></li>
+    <li class="active">
+      <a [routerLink]="['/aboutus']" routerLinkActive="active">About Us</a>
+    </li>
+
+    <!-- Technical Capabilities -->
+    <!-- <li class="dropdown" [ngClass]="{ 'active': isDropdownOpen['Technical_capability'] }"
+      (click)="toggleDropdown('Technical_capability')">
+      <span class="active">
+        Technical Capabilities
+        <i
+          class="fa-solid"
+          [ngClass]="{
+            'fa-chevron-down': !isDropdownOpen['Technical_capability'],
+            'fa-chevron-up': isDropdownOpen['Technical_capability']
+          }"
+        ></i>
+      </span>
+      <ul class="dropdown-menu">
+        <li><i class="fa-solid fa-angles-right"></i><a [routerLink]="['']">Under_develop</a></li>
+        <li><i class="fa-solid fa-angles-right"></i><a [routerLink]="['Naan_mudhalvan/faculty_development/']">
+          Under_develop</a></li>
+      </ul>
+    </li> -->
+
+    <!-- LABS Dropdown -->
+    <li
+      class="dropdown"
+      [ngClass]="{ active: isDropdownOpen['services'] }"
+      (click)="toggleDropdown('services')"
+    >
+      <span class="active">
+        Labs
+        <i
+          class="fa-solid"
+          [ngClass]="{
+            'fa-chevron-down': !isDropdownOpen['services'],
+            'fa-chevron-up': isDropdownOpen['services']
+          }"
+        ></i>
+      </span>
+      <!-- <ul class="dropdown-menu">
+        <li *ngFor="let lab of labs">
+          <i class="fa-solid fa-angles-right"></i>
+          <a [routerLink]="['/labs', lab.key]">{{ lab.title }}</a>
+        </li>
+      </ul> -->
+    </li>
+
+    <!-- Technical Capabilities -->
+    <!-- <li class="dropdown" [ngClass]="{ 'active': isDropdownOpen['Project'] }"
+        (click)="toggleDropdown('Project')">
+        <span class="active">
+          Project
+          <i class="fa-solid"
+            [ngClass]="{ 'fa-chevron-down': !isDropdownOpen['Project'], 'fa-chevron-up': isDropdownOpen['Project'] }"></i>
+        </span>
+        <ul class="dropdown-menu">
+          <li><i class="fa-solid fa-angles-right"></i><a [routerLink]="['']">Under_develop</a></li>
+          <li><i class="fa-solid fa-angles-right"></i><a [routerLink]="['Naan_mudhalvan/faculty_development/']">
+            Under_develop</a></li>
+        </ul>
+      </li> -->
+
+    <!-- Naan Mudhalvan Dropdown -->
+    <li
+      class="dropdown"
+      [ngClass]="{ active: isDropdownOpen['naanmudhalvan'] }"
+      (click)="toggleDropdown('naanmudhalvan')"
+    >
+      <span class="active">
+        Acadamic Initiative
+        <i
+          class="fa-solid"
+          [ngClass]="{
+            'fa-chevron-down': !isDropdownOpen['naanmudhalvan'],
+            'fa-chevron-up': isDropdownOpen['naanmudhalvan']
+          }"
+        ></i>
+      </span>
+      <!-- <ul class="dropdown-menu">
+        <li>
+          <i class="fa-solid fa-angles-right"></i
+          ><a [routerLink]="['']">Naan Mudhalvan</a>
+          <ul class="sub-dropdown">
+            <li>
+              <i class="fa-solid fa-angles-right"></i
+              ><a [routerLink]="['Naan_mudhlvan/up_skilling']">Up Skilling</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-angles-right"></i
+              ><a [routerLink]="['Naan_mudhalvan/faculty_development/']"
+                >Faculty Development</a
+              >
+            </li>
+          </ul>
+        </li>
+        
+      </ul> -->
+    </li>
+
+    <!-- Media Dropdown -->
+    <li
+      class="dropdown"
+      [ngClass]="{ active: isDropdownOpen['media'] }"
+      (click)="toggleDropdown('media')"
+    >
+      <span class="active">
+        Media
+        <i
+          class="fa-solid"
+          [ngClass]="{
+            'fa-chevron-down': !isDropdownOpen['media'],
+            'fa-chevron-up': isDropdownOpen['media']
+          }"
+        ></i>
+      </span>
+    </li>
+    <li class="active"><a [routerLink]="['Brochure']">Brochures</a></li>
+    <!-- <li class="active"><a [routerLink]="['']">Achievement</a></li> -->
+    <li class="active"><a [routerLink]="['contact_us']">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Navigation end here -->
+
+<!-- Full Screen Dull Overlay -->
+<div class="dull-overlay" id="dullOverlay"></div>
+
+<!-- Right side overlay panel -->
+<div class="overlay-panel hidden" id="overlayPanel">
+  <!-- <div class="panel-content">
+    <img src="/assets/mainpageimage/tansamlogo.png" />
+    <p>
+      Tamil Nadu Industrial Development Corporation (TIDCO) to establish The
+      Tamil Nadu Smart and Advanced Manufacturing Centre (TANSAM) at the TIDEL
+      Park, Chennai.
+    </p>
+  </div> -->
+
+  <div class="panel-content2">
+    <h3>Contact US</h3>
+
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <div class="detail">
+        <i class="fa-solid fa-envelope"></i>
+        <p>
+          <a href="fa fa-envelope text-primary me-2">info&#64;broadino.com</a>
+          <!-- <a href="mailto:nateshc&#64;tansam.org">nateshc&#64;tansam.org</a> -->
+        </p>
+      </div>
+      <div class="detail">
+        <i class="fa-solid fa-phone"></i>
+        <p>+1-224-537-7490</p>
+      </div>
+      <div class="detail">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>12310 Pinecrest Road, STE 306, Reston, VA 20191, USA</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Right side frame toggle -->
+<div class="rightsideframe" id="rightsideframe">
+  <i id="toggleIcon" class="fa-solid fa-angles-right"></i>
+</div>

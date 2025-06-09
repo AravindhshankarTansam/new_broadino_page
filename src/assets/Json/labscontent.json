@@ -1,0 +1,58 @@
+[
+  {
+    "key": "innovative_manufacturing",
+    "title": "Innovative Manufacturing",
+    "description": "This lab focuses on developing advanced, smart manufacturing solutions for modern industries using digital technologies.",
+    "software": "SolidWorks, AutoCAD, Siemens NX",
+    "images": ["assets/img/innovative1.jpg"]
+  },
+  {
+    "key": "product_innovation",
+    "title": "Product Innovation",
+    "description": "This lab helps transform creative ideas into viable products through research, design, and rapid prototyping.",
+    "software": "Fusion 360, Rhino 3D",
+    "images": ["assets/img/Productinnovation.jpg"]
+  },
+  {
+    "key": "arvrmr_research",
+    "title": "AR | VR | MR Research",
+    "description": "Explore Augmented, Virtual, and Mixed Reality technologies and their applications across various industries.",
+    "software": "Unity, Unreal Engine, Blender",
+    "images": ["assets/img/arvr.jpg"]
+  },
+  {
+    "key": "ai_strategy_consulting",
+    "title": "AI Strategy Consulting",
+    "description": "This lab offers consulting services for organizations to integrate Artificial Intelligence into their workflows.",
+    "software": "Python, TensorFlow, Keras",
+    "images": ["assets/img/AiStrategy.jpg"]
+  },
+  {
+    "key": "research_centre_for_plm",
+    "title": "Research Centre for PLM",
+    "description": "Dedicated to Product Lifecycle Management, this lab helps industries improve design-to-delivery timelines.",
+    "software": "Teamcenter, Windchill",
+    "images": ["assets/img/Picture1.png"]
+  },
+  {
+    "key": "iot_lab",
+    "title": "Internet of Things (IoT) Lab",
+    "description": "Develop smart and connected solutions using sensors, microcontrollers, and IoT platforms.",
+    "software": "Node-RED, Arduino IDE, ThingSpeak",
+    "images": ["assets/img/product.jpg"]
+  },
+  {
+    "key": "predictive_engineering",
+    "title": "Predictive Engineering",
+    "description": "Utilize simulation and data analytics to predict product performance and failure points.",
+    "software": "ANSYS, MATLAB, Simulink",
+    "images": ["assets/img/predictive_engineering.jpg"]
+  },
+  {
+    "key": "reverse_engineering",
+    "title": "Reverse Engineering",
+    "description": "Analyze and reconstruct existing physical products to create accurate digital models.",
+    "software": "Geomagic Design X, PolyWorks",
+    "images": ["assets/img/ReverseEngineering.jpg"]
+  }
+]

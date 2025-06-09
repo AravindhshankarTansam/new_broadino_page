@@ -1,0 +1,89 @@
+<!--about company-->
+
+<div class="about-section my-5">
+  <div class="about-image"></div>
+  <div class="about-text">
+    <h2><b>About Broadino</b></h2>
+    <p>
+      Broadino is a forward-thinking technology company specializing in advanced
+      manufacturing solutions powered by Industry 4.0. By integrating
+      cutting-edge technologies such as AI, IoT, robotics, cloud computing, and
+      data analytics, Broadino helps industries transition into smart,
+      efficient, and connected ecosystems. Our goal is to empower manufacturers
+      with intelligent systems that enhance productivity, enable real-time
+      decision-making, and drive innovation across the value chain. At Broadino,
+      we are committed to shaping the future of manufacturing through
+      automation, digital transformation, and sustainable industrial growth.
+    </p>
+  </div>
+</div>
+
+<div class="container py-5">
+  <div class="text-center mb-4">
+    <h2><b>Our Labs</b></h2>
+  </div>
+
+  <div class="row g-4">
+    <!-- g-4 gives good spacing -->
+    <div class="col-md-6 col-lg-3" *ngFor="let lab of labs">
+      <div class="card custom-card h-100">
+        <div
+          class="card-image"
+          [style.backgroundImage]="'url(' + lab.src + ')'"
+        >
+          <div class="overlay">
+            <h5 class="card-title">{{ lab.title }}</h5>
+            <button
+              class="btn btn-light take-over"
+              (click)="onTakeOverClick(lab.key)"
+            >
+              Further Details <i class="fa fa-arrow-right arrow-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Why Broadino Section -->
+<div class="container text-center my-5">
+  <h2 class="mb-4">Why Choose Broadino?</h2>
+  <div class="row">
+    <div class="col-md-4" data-aos="zoom-in">
+      <img src="assets/img/Aiimg.jpg" class="img-fluid mb-3" alt="AI" />
+      <h5>AI-Driven</h5>
+      <p>Cutting-edge artificial intelligence at the core of our solutions.</p>
+    </div>
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+      <img
+        src="assets/img/Teamworkimg.jpg"
+        class="img-fluid mb-3"
+        alt="Teamwork"
+      />
+      <h5>Collaborative Culture</h5>
+      <p>Innovation thrives when brilliant minds collaborate together.</p>
+    </div>
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+      <img src="assets/img/Solu1.jpg" class="img-fluid mb-3" alt="Security" />
+      <h5>Secure Solutions</h5>
+      <p>Enterprise-grade security built into every platform.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Technology Stack Section -->
+<!-- <p class="tech-heading text-center mt-5">Our Technology Stack</p>
+
+<div
+  class="tech-stack-container d-flex flex-wrap justify-content-center gap-4 mt-4 px-3 px-md-5"
+>
+  <div
+    class="tech-item"
+    *ngFor="let tech of techStack"
+    data-aos="zoom-in"
+    data-aos-duration="800"
+  >
+    <img [src]="tech" class="tech-logo" alt="Technology Logo" />
+  </div>
+</div> -->
