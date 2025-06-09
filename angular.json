@@ -107,7 +107,6 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "baseHref": "/new_broadino/",
-            "deployUrl": "/new_broadino/",
             "outputPath": "dist/broadino_web/browser"
           }
         }
